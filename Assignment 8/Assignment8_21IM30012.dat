@@ -1,0 +1,10 @@
+/*********************************************
+ * OPL 12.5 Data
+ * Author: ime
+ * Creation Date: 22-Mar-2023 at 2:24:07 PM
+ *********************************************/
+n=17;
+
+SheetConnection
+projectdata("C:\\Users\\ime\\Downloads\\assignment8.xlsx");
+cost from SheetRead(projectdata,"Sheet1!A1:Q17");

@@ -1,0 +1,25 @@
+/*********************************************
+ * OPL 12.5 Data
+ * Author: CL-51
+ * Creation Date: Jan 18, 2023 at 1:26:24 PM
+ *********************************************/
+ SheetConnection
+ 
+projectdata("C:\\Users\\CL-51\\Downloads\\Lab_Assignment_2.xlsx");
+
+ N =4;
+ 
+ C from SheetRead(projectdata,"Cutting");
+ I from SheetRead(projectdata,"Insulating");
+ S from SheetRead(projectdata,"Sewing");
+ P from SheetRead(projectdata,"Packaging");
+ demand from SheetRead(projectdata,"Demand");
+ profit  from SheetRead(projectdata,"profit");
+ penalty from SheetRead(projectdata,"penalty");
+ 
+C1 from SheetRead(projectdata,"capacity1");
+C2 from SheetRead(projectdata,"capacity2");
+C3 from SheetRead(projectdata,"capacity3");
+C4 from SheetRead(projectdata,"capacity4");
+units to SheetWrite(projectdata,"ANS1!A3:D3");
+ 

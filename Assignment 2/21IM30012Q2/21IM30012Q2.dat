@@ -1,0 +1,17 @@
+/*********************************************
+ * OPL 12.5 Data
+ * Author: CL-51
+ * Creation Date: Jan 18, 2023 at 2:37:07 PM
+ *********************************************/
+SheetConnection
+ 
+projectdata("C:\\Users\\CL-51\\Downloads\\Lab_Assignment_2.xlsx");
+
+ N =6;
+ 
+demand from SheetRead(projectdata,"Problem2!B2:B7");
+cost from SheetRead(projectdata,"Problem2!C2:C7");
+inventcost =8;
+
+x to SheetWrite(projectdata,"ANS2!B3:G3");
+e to SheetWrite(projectdata,"ANS2!B5:G5");
